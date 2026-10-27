@@ -1,0 +1,38 @@
+.story {
+  background:var(--bg2);
+}
+
+.story-grid {
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:clamp(32px,7vw,120px);
+  align-items:center;
+}
+
+.story .im {
+  aspect-ratio:1/1.1;
+  box-shadow:0 30px 60px -30px #2a211b88;
+}
+
+.story h2 {
+  margin:18px 0 26px;
+}
+
+.story .lead+.lead {
+  margin-top:16px;
+}
+
+.quote {
+  margin-top:34px;
+  padding-inline-start:24px;
+  border-inline-start:2px solid var(--acc);
+  font-family:var(--head);
+  font-size:26px;
+  line-height:1.6;
+}
+
+@media (max-width:860px) {
+  .story-grid {
+    grid-template-columns:1fr;
+  }
+}

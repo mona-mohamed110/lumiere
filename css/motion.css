@@ -1,0 +1,24 @@
+.rv {
+  opacity:0;
+  transform:translateY(28px);
+  transition:opacity 1s var(--ease),transform 1s var(--ease);
+  transition-delay:var(--d,0s);
+}
+
+.rv.in {
+  opacity:1;
+  transform:none;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  * {
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+
+  .rv {
+    opacity:1;
+    transform:none;
+  }
+}

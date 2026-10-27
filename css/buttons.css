@@ -1,0 +1,35 @@
+.btn {
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 30px;
+  border-radius:99px;
+  border:1px solid var(--ink);
+  font-size:15px;
+  transition:.4s var(--ease);
+}
+
+.btn.fill {
+  background:var(--ink);
+  color:var(--on);
+}
+
+.btn.fill:hover {
+  background:var(--acc);
+  border-color:var(--acc);
+  transform:translateY(-2px);
+}
+
+.btn.ghost:hover {
+  background:var(--ink);
+  color:var(--on);
+}
+
+.btn svg {
+  transform:scaleX(-1);
+  transition:transform .4s var(--ease);
+}
+
+.btn:hover svg {
+  transform:scaleX(-1) translateX(5px);
+}
